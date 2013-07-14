@@ -15,6 +15,26 @@ use Drupal\simpletest\WebTestBase;
 abstract class SitesurveyTestBase extends WebTestBase {
 
   /**
+   * @var string
+   */
+  public $path;
+
+  /**
+   * @var string
+   */
+  public $admin_path;
+
+  /**
+   * @var string
+   */
+  public $permission;
+
+  /**
+   * @var string
+   */
+  public $admin_permission;
+
+  /**
    * Modules to enable.
    *
    * @var array
@@ -26,6 +46,13 @@ abstract class SitesurveyTestBase extends WebTestBase {
    */
   protected function setUp() {
     parent::setUp();
+
+    // Common variables used in tests.
+    $this->path = 'sitesurvey';
+    $this->admin_path = 'admin/reports/sitesurvey';
+    $this->permission = 'respond to site survey';
+    $this->admin_permission = 'view site survey results';
+
   }
 
 }
