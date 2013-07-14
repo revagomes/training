@@ -29,6 +29,10 @@ class SitesurveyFormTest extends SitesurveyTestBase {
     $this->drupalGet($this->path);
     $this->assertResponse(200);
 
+    // Data table should be empty.
+    $count = $this->getRows();
+    $this->assertTrue(empty($count), 'No database records exist.');
+
     $items = array(
       'name' => array(
         'label' => 'Your name',
@@ -67,6 +71,10 @@ class SitesurveyFormTest extends SitesurveyTestBase {
 
     // Check the response message.
     $this->assertText('Thank you!', 'Thank you message shown.');
+
+    // Data table should have 1 row.
+    $count = $this->getRows();
+    $this->assertTrue($count == 1, 'One database record exists.');
 
   }
 

@@ -55,4 +55,14 @@ abstract class SitesurveyTestBase extends WebTestBase {
 
   }
 
+  /**
+   * Helper method for counting database records.
+   */
+  public function getRows() {
+    if (db_table_exists('sitesurvey')) {
+      return db_query("SELECT COUNT(1) FROM {sitesurvey}")->fetchCol();
+    }
+    return 0;
+  }
+
 }
