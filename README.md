@@ -11,10 +11,11 @@ The modules are written is a specific order, and branches in the repository indi
   * module.module
   * README.md file explaining the module features.
   * Commit to the _initial_ branch
-* Write tests.
-  * Commit tests to the _tests_ branch.
 * Write scaffolding for features -- the folders and files that will hold the final code.
   * Commit to the _structure_ branch
+* Write tests.
+  * Use PHPUnit when possible.
+  * Commit tests to the _tests_ branch.
 * Write the working code.
   * Commit to the _final_ branch.
 
@@ -23,8 +24,8 @@ This structure will allow students to walk through code samples at their own pac
 * Install Drupal 8
 * Git clone the _master_ branch
 * Checkout the _initial_ branch
-* Checkout the _tests_ branch
 * Checkout the _structure_ branch
+* Checkout the _tests_ branch
 * Write code to make the tests pass.
 * Refer to the _final_ branch if students get stuck
 
