@@ -1,0 +1,5 @@
+name: Site survey
+description: 'Creates a small user survey about the site.'
+type: module
+version: VERSION
+core: 8.x
