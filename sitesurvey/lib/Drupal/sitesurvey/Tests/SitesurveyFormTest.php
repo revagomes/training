@@ -26,6 +26,9 @@ class SitesurveyFormTest extends SitesurveyTestBase {
    * Test the form handler.
    */
   public function testSitesurveyForm() {
+    // Let anonymous users view the form.
+    user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array($this->permission));
+
     $this->drupalGet($this->path);
     $this->assertResponse(200);
 
@@ -75,7 +78,6 @@ class SitesurveyFormTest extends SitesurveyTestBase {
     // Data table should have 1 row.
     $count = $this->getRows();
     $this->assertTrue($count == 1, 'One database record exists.');
-
   }
 
 }
