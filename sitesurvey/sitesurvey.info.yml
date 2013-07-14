@@ -1,4 +1,4 @@
-name: Site survey
+name: Site Survey
 description: 'Creates a small user survey about the site.'
 type: module
 version: VERSION
