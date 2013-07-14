@@ -28,5 +28,5 @@ This structure will allow students to walk through code samples at their own pac
 * Write code to make the tests pass.
 * Refer to the _final_ branch if students get stuck
 
-With this branch structure, changes should be merged down. That is, the pattern is that changes to _initial_ are replicated to all branches that follow.
+With this branch structure, changes should be merged up. That is, the pattern is that changes to _initial_ are replicated to all branches that follow.
 
