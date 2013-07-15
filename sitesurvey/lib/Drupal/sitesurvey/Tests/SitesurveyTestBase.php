@@ -65,4 +65,50 @@ abstract class SitesurveyTestBase extends WebTestBase {
     return 0;
   }
 
+  /**
+   * Helper method to generate a test item.
+   */
+  public function getTestItem() {
+    return array(
+      'name' => array(
+        'label' => 'Your name',
+        'input' => 'Jane Doe',
+      ),
+      'purpose' => array(
+        'label' => 'Why did you visit the site today?',
+        'input' => 'To find a phone number.',
+      ),
+      'success' => array(
+        'label' => 'Did you find what you were looking for?',
+        'input' => '1',
+      ),
+      'recommend' => array(
+        'label' => 'Would you recommend the site to your friends?',
+        'input' => '1',
+      ),
+      'improve' => array(
+        'label' => 'What one thing could we do to improve the site?',
+        'input' => 'Use black text for easier reading.',
+      ),
+      'hear' => array(
+        'label' => 'How did you hear about the site?',
+        'input' => 'Search engine',
+      )
+    );
+  }
+
+  /**
+   * Helper function to save test items.
+   */
+  public function saveTestItem(array $item) {
+    $values = array();
+    foreach ($item as $key => $value) {
+      $values[$key] = $value['input'];
+    }
+    // @TODO: Fix this call to OOP.
+    if (db_table_exists('sitesurvey')) {
+      drupal_write_record('sitesurvey', $values);
+    }
+  }
+
 }
