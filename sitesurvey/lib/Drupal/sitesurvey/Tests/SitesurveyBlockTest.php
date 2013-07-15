@@ -30,7 +30,9 @@ class SitesurveyBlockTest extends SitesurveyTestBase {
     user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array($this->permission));
 
     // Place the block.
-    $this->drupalPlaceBlock('sitesurvey_block');
+    if (class_exists('SitesurveyBlock')) {
+      $this->drupalPlaceBlock('sitesurvey_block');
+    }
 
     // Go to the home page.
     $this->drupalGet('');
