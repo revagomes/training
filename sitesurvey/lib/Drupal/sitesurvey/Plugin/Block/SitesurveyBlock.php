@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Definition of Drupal\sitesurvey\Plugin\Block\SitesurveyForm.
+ * Definition of Drupal\sitesurvey\Plugin\Block\SitesurveyBlock.
  */
 
 namespace Drupal\sitesurvey\Plugin\Block;
