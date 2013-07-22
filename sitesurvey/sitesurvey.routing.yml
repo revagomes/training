@@ -1,2 +1,6 @@
 sitesurvey_form:
   pattern: 'sitesurvey'
+  defaults:
+    _form: '\Drupal\sitesurvey\Form\SitesurveyForm'
+  requirements:
+    _permission: 'respond to site survey'
