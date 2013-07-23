@@ -4,3 +4,14 @@
  * @file
  * Install and uninstall functions for the Site Survey module.
  */
+
+/**
+ * Implements hook_schema().
+ */
+function sitesurvey_schema() {
+  $schema = array(
+
+  );
+
+  return $schema;
+}

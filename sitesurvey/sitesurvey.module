@@ -19,3 +19,12 @@ function sitesurvey_permission() {
   );
   return $permissions;
 }
+
+/**
+ * Saves a submission.
+ */
+function sitesurvey_save($values) {
+  $query = db_insert('sitesurvey')
+    ->fields($values)
+    ->execute();
+}
