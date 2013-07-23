@@ -60,7 +60,8 @@ abstract class SitesurveyTestBase extends WebTestBase {
    */
   public function getRows() {
     if (db_table_exists('sitesurvey')) {
-      return db_query("SELECT COUNT(1) FROM {sitesurvey}")->fetchCol();
+      $query = db_select('sitesurvey');
+      return $query->countQuery()->execute()->fetchField();
     }
     return 0;
   }
