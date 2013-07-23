@@ -9,9 +9,70 @@
  * Implements hook_schema().
  */
 function sitesurvey_schema() {
-  $schema = array(
-
+  $schema['sitesurvey'] = array(
+    'description' => 'Stores Site Survey responses.',
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'Numeric id.',
+      ),
+      'name' => array(
+        'type' => 'varchar',
+        'length' => '80',
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Name',
+      ),
+      'purpose' => array(
+        'type' => 'text',
+        'size' => 'medium',
+        'not null' => TRUE,
+        'description' => 'Purpose',
+      ),
+      'success' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'Success',
+      ),
+      'recommend' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'Recommend',
+      ),
+      'improve' => array(
+        'type' => 'text',
+        'size' => 'medium',
+        'not null' => TRUE,
+        'description' => 'Improve',
+      ),
+      'hear' => array(
+        'type' => 'varchar',
+        'length' => '20',
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Hear',
+      ),
+      'submitted' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => 'Submitted',
+      ),
+    ),
+    'primary key' => array('id'),
+    'indexes' => array(
+      'name' => array('name'),
+    ),
+    'unique keys' => array(),
+    'foreign_keys' => array(),
   );
 
   return $schema;
 }
+

@@ -92,7 +92,11 @@ class SitesurveyForm implements FormInterface {
    */
   public function submitForm(array &$form, array &$form_state) {
     $values = $form_state['values'];
-    sitesurvey_save($values);
+    $allowed = array('name', 'purpose', 'success', 'recommend', 'improve', 'hear');
+    foreach ($allowed as $item) {
+      $record[$item] = $values[$item];
+    }
+    sitesurvey_save($record);
     drupal_set_message(t('Thank you!'));
   }
 

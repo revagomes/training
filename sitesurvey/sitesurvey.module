@@ -23,8 +23,9 @@ function sitesurvey_permission() {
 /**
  * Saves a submission.
  */
-function sitesurvey_save($values) {
+function sitesurvey_save($record) {
+  $record['submitted'] = REQUEST_TIME;
   $query = db_insert('sitesurvey')
-    ->fields($values)
+    ->fields($record)
     ->execute();
 }
