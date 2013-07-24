@@ -12,6 +12,13 @@ use Drupal\sitesurvey\Tests\SitesurveyTestBase;
 class SitesurveyBlockTest extends SitesurveyTestBase {
 
   /**
+   * Modules to enable.
+   *
+   * @var array
+   */
+  public static $modules = array('sitesurvey', 'block');
+
+  /**
    * Test information.
    */
   public static function getInfo() {
@@ -30,9 +37,8 @@ class SitesurveyBlockTest extends SitesurveyTestBase {
     user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array($this->permission));
 
     // Place the block.
-    if (class_exists('SitesurveyBlock')) {
-      $this->drupalPlaceBlock('sitesurvey_block');
-    }
+    $settings = array('label' => 'Site Survey');
+    $this->drupalPlaceBlock('sitesurvey_block', $settings);
 
     // Go to the home page.
     $this->drupalGet('');
