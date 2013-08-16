@@ -76,4 +76,3 @@ function sitesurvey_schema() {
 
   return $schema;
 }
-

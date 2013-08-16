@@ -6,19 +6,6 @@
  */
 
 /**
- * Implements hook_menu().
- */
-function sitesurvey_menu() {
-  $items['admin/reports/sitesurvey'] = array(
-    'route_name' => 'sitesurvey_admin',
-    'title' => 'Site Survey results',
-    'description' => 'Collects the reports from site users.',
-  );
-
-  return $items;
-}
-
-/**
  * Implements hook_permission().
  */
 function sitesurvey_permission() {

@@ -4,10 +4,3 @@ sitesurvey_form:
     _form: '\Drupal\sitesurvey\Form\SitesurveyForm'
   requirements:
     _permission: 'respond to site survey'
-
-sitesurvey_admin:
-  pattern: 'admin/reports/sitesurvey'
-  defaults:
-    _content: '\Drupal\sitesurvey\Controller\SitesurveyController::reportPage'
-  requirements:
-    _permission: 'view site survey results'
