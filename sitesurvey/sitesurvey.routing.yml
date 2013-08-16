@@ -7,6 +7,6 @@ sitesurvey_form:
 sitesurvey_data:
   pattern: 'admin/reports/sitesurvey'
   defaults:
-    _content: '\Drupal\sitesurvey\Controller\SitesurveyController.php'
+    _content: '\Drupal\sitesurvey\Controller\SitesurveyController::reportPage'
   requirements:
     _permission: 'view site survey results'

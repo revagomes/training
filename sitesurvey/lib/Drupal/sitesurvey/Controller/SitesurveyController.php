@@ -13,4 +13,8 @@ use Drupal\Core\Controller\ControllerInterface;
  */
 class DomainController implements ControllerInterface {
 
+  public function reportPage() {
+    return 'foo';
+  }
+
 }
