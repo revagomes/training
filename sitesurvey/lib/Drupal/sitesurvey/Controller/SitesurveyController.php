@@ -13,8 +13,9 @@ use Drupal\Core\Controller\ControllerBase;
  */
 class SitesurveyController extends ControllerBase {
 
-
-
+  /**
+   * Generates the report page.
+   */
   public function reportPage() {
     return 'foo';
   }
