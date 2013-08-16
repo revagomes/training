@@ -7,4 +7,3 @@ sitesurvey_form:
 
 sitesurvey_admin:
   pattern: 'admin/reports/sitesurvey'
-
