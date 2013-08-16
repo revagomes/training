@@ -53,6 +53,8 @@ class SitesurveyDataTest extends SitesurveyTestBase {
     $this->assertTrue($count == 25, '25 database records exist.');
 
     // HTML output should contain...
+    $this->drupalGet($this->admin_path);
+    $this->assertText('25 records exist.');
 
   }
 
