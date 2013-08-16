@@ -6,12 +6,14 @@
 
 namespace Drupal\sitesurvey\Controller;
 
-use Drupal\Core\Controller\ControllerInterface;
+use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Controller routines for domain routes.
+ * Controller routines for Site Survey routes.
  */
-class DomainController implements ControllerInterface {
+class SitesurveyController extends ControllerBase {
+
+
 
   public function reportPage() {
     return 'foo';
