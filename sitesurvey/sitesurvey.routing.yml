@@ -1,2 +1,5 @@
 sitesurvey_form:
   pattern: 'sitesurvey'
+
+sitesurvey_admin:
+  pattern: 'admin/reports/sitesurvey'
