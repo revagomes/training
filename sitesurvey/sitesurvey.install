@@ -62,6 +62,7 @@ function sitesurvey_schema() {
         'type' => 'int',
         'unsigned' => TRUE,
         'not null' => TRUE,
+        'default' => 0,
         'description' => 'Submitted',
       ),
     ),
