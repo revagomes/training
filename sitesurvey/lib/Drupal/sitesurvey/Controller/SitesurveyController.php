@@ -17,7 +17,9 @@ class SitesurveyController extends ControllerBase {
    * Generates the report page.
    */
   public function reportPage() {
-    return 'foo';
+    $query = db_select('sitesurvey');
+    $count = $query->countQuery()->execute()->fetchField();
+    return "$count records exist.";
   }
 
 }
