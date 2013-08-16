@@ -505,8 +505,8 @@ display:
           admin_label: ''
           empty: '1'
           tokenize: '0'
-          content: "<p>There are no survey results.</p>\n"
-          format: basic_html
+          content: "There are no survey results."
+          format: plain_text
           plugin_id: text
           provider: views
       relationships: {  }

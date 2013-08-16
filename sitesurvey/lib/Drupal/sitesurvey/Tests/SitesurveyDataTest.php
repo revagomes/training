@@ -12,6 +12,13 @@ use Drupal\sitesurvey\Tests\SitesurveyTestBase;
 class SitesurveyDataTest extends SitesurveyTestBase {
 
   /**
+   * Modules to enable.
+   *
+   * @var array
+   */
+  public static $modules = array('sitesurvey', 'views');
+
+  /**
    * Test information.
    */
   public static function getInfo() {
@@ -37,6 +44,7 @@ class SitesurveyDataTest extends SitesurveyTestBase {
     // Visit the report page.
     $this->drupalGet($this->admin_path);
     $this->assertResponse(200);
+    $this->assertText('There are no survey results.');
 
     // Data table should be empty.
     $count = $this->getRows();
@@ -54,7 +62,13 @@ class SitesurveyDataTest extends SitesurveyTestBase {
 
     // HTML output should contain...
     $this->drupalGet($this->admin_path);
-    $this->assertText('25 records exist.');
+    // Header test.
+    $this->assertText('Success');
+    // Row test.
+    $this->assertText('Jane Doe');
+    // Pager test.
+    $this->assertText('next');
+    $this->assertText('last');
 
   }
 
