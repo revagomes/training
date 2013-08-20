@@ -30,11 +30,13 @@ In our module, we have three additional files in module root:
 
 ### Subdirectories
 
-In addition to our root directory, most modules also contain three additional directories.
+In addition to our root directory, most modules also contain three additional directories:
 
 * **config**
   * Stores YAML files related to module configuration. We will explore these files in later branches, such as _5-views_.
 * **lib**
   * The library directory holds OO code and is designed around the [PSR-0 standard for PHP](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md). It encourages code re-use across multiple projects. The biggest changes to Drupal are found in this directory.
 * **tests**
-  * For projects using [PHPUnit](http://www.phpunit.de/) for testing. We'll address those files in a later branch. See [this change notice for more information](https://drupal.org/node/2012184).
+  * For projects using [PHPUnit](http://www.phpunit.de/) for testing. We'll address those files in a later branch, and this directory is not present. See [this change notice for more information](https://drupal.org/node/2012184).
+
+### /lib
