@@ -12,7 +12,7 @@ Also included are Simpletests for the functionality required by the module. You 
 
 In Drupal 8, there are two required files for each module:
 * sitesurvey.info.yml
-  * A YAML file that registers your module with Drupal.
+  * A YAML file that registers your module with Drupal. See [this change record to learn about this file](https://drupal.org/node/1935708).
 * sitesurvey.module
   * The module file. Note that, in some cases, this file may be empty.
 
