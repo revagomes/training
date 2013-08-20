@@ -10,6 +10,8 @@ Also included are Simpletests for the functionality required by the module. You 
 
 ## Module structure
 
+### Root files
+
 In Drupal 8, there are two required files for each module:
 * **sitesurvey.info.yml**
   * A [YAML](http://yaml.org/) file that registers your module with Drupal. See [this change record to learn about this file](https://drupal.org/node/1935708). For this lesson, we have filled out the file for you.
@@ -25,3 +27,14 @@ In our module, we have three additional files in module root:
   * A new file, the routing YAML file defines the routes (think Drupal 7 menu paths) used by your module. We'll look at routes later, in branch _1-routing_.
 * **sitesurvey.views.inc**
   * A file containing specific hook implementations. Since Views is now in core, we will provide Views support for our module data.
+
+### Subdirectories
+
+In addition to our root directory, most modules also contain three additional directories.
+
+* **config**
+  * Stores YAML files related to module configuration. We will explore these files in later branches, such as _5-views_.
+* **lib**
+  * The library directory holds OO code and is designed around the [PSR-0 standard for PHP](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md). It encourages code re-use across multiple projects. The biggest changes to Drupal are found in this directory.
+* **tests**
+  * For projects using [PHPUnit](http://www.phpunit.de/) for testing. We'll address those files in a later branch. See [this change notice for more information](https://drupal.org/node/2012184).
