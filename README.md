@@ -16,9 +16,10 @@ For our first lesson, we will cover the basic layout and organization of Drupal 
 * The page may be blank, but must return a 200 status code.
 * If returning a form, the form may be blank.
 
-Success criteria:
+### Success criteria
 
-* The _Sitesurvey Form_ test should return
+* Requests to the _/sitesurvey_ path should return status 200 and valid HTML.
+* The _Sitesurvey Form_ test should return *7 passes, 22 fails, and 0 exceptions*
 
 To get started, we need to review the module structure.
 
