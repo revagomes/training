@@ -8,6 +8,20 @@ In the _0-setup_ branch you will find a module called *sitesurvey* that contains
 
 Also included are Simpletests for the functionality required by the module. You can read the module specification in the [sitesurvey/README.md](https://github.com/palantirnet/training/tree/0-setup/sitesurvey) file. In our examples, we will reference that module.
 
+## Lesson 1: Routing
+
+For our first lesson, we will cover the basic layout and organization of Drupal 8 modules. Our goals for this code session are:
+
+* Create a page that displays at /sitesurvey.
+* The page may be blank, but must return a 200 status code.
+* If returning a form, the form may be blank.
+
+Success criteria:
+
+* The _Sitesurvey Form_ test should return
+
+To get started, we need to review the module structure.
+
 ## Module structure
 
 ### Root files
@@ -69,4 +83,11 @@ The test structure is as follows:
       SitesurveyDataTest.php      <-- Tests data storage and admin page
       SitesurveyFormTest.php      <-- Tests form usage and data storage
       SitesurveyTestBase.php      <-- Abstract base class for test setup
+
+## Hints
+
+For this lesson, the primary files we are concerned with are:
+
+* sitesurvey.routing.yml
+* lib/Drupal/sitesurvey/Form/SitesurveyForm.php
 
