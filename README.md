@@ -24,7 +24,7 @@ In our module, we have three additional files in module root:
 * **sitesurvey.install**
   * Contains functions to run on installation and uninstallation. Largely unchanged from Drupal 7.
 * **sitesurvey.routing.yml**
-  * A new file, the routing YAML file defines the routes (think Drupal 7 menu paths) used by your module. We'll look at routes later, in branch _1-routing_.
+  * A new file, the [routing YAML file](https://drupal.org/node/1800686) defines the routes (think Drupal 7 menu paths) used by your module. We'll look at routes later, in branch _1-routing_.
 * **sitesurvey.views.inc**
   * A file containing specific hook implementations. Since Views is now in core, we will provide Views support for our module data in the _5-views_ branch.
 
