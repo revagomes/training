@@ -6,7 +6,7 @@ Welcome to Drupal 8!
 
 In the _0-setup_ branch you will find a module called *sitesurvey* that contains a set of scaffolding files that introduce Drupal 8 module structure.
 
-Also included are Simpletests for the functionality required by the module. You can read the module specification in the sitesurvey/README.md file. In our examples, we will reference that module.
+Also included are Simpletests for the functionality required by the module. You can read the module specification in the [sitesurvey/README.md](https://github.com/palantirnet/training/tree/0-setup/sitesurvey) file. In our examples, we will reference that module.
 
 ## Module structure
 
@@ -26,7 +26,7 @@ In our module, we have three additional files in module root:
 * **sitesurvey.routing.yml**
   * A new file, the routing YAML file defines the routes (think Drupal 7 menu paths) used by your module. We'll look at routes later, in branch _1-routing_.
 * **sitesurvey.views.inc**
-  * A file containing specific hook implementations. Since Views is now in core, we will provide Views support for our module data.
+  * A file containing specific hook implementations. Since Views is now in core, we will provide Views support for our module data in the _5-views_ branch.
 
 ### Subdirectories
 
