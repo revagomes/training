@@ -12,8 +12,8 @@ Also included are Simpletests for the functionality required by the module. You 
 
 For our first lesson, we will cover the basic layout and organization of Drupal 8 modules. Our goals for this code session are:
 
-* Create a page that displays at /sitesurvey.
-* The page may be blank, but must return a 200 status code.
+* Create the HTML page that displays at /sitesurvey as defined by the requirements.
+* The page may be blank, but must return a 200 status code for all users.
 * If returning a form, the form may be blank.
 
 ### Success criteria
