@@ -48,11 +48,12 @@ The library structure also helps enforce separation of concerns in your code. As
 The base structure of /lib is as follows:
 
     lib/
-      Drupal/
-        sitesurvey/
-          Controller/
-          Form/
-          Plugin/
-            Block/
-          Tests/
+      Drupal/           <-- The Drupal project namespace
+        sitesurvey/     <-- The project namespace
+          Controller/   <-- Contains classes for route controllers
+          Form/         <-- Contains classes for forms
+          Plugin/       <-- Holds Drupal plugin definitions
+            Block/      <-- Contains classes for blocks
+          Tests/        <-- Contains classes for Simpletests
 
+There are other directories that may go in _lib/Drupal/sitesurvey_, which we will address later.
