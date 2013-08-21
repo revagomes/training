@@ -57,3 +57,16 @@ The base structure of /lib is as follows:
           Tests/        <-- Contains classes for Simpletests
 
 There are other directories that may go in _lib/Drupal/sitesurvey_, which we will address later.
+
+#### Tests
+
+For the Site Survey module, we have created tests for the defined functionality. In each lesson, your goal will be to make specific tests pass.
+
+The test structure is as follows:
+
+    /lib/Drupal/sitesurvey/Tests
+      SitesurveyBlockTest.php     <-- Tests block access and output rules
+      SitesurveyDataTest.php      <-- Tests data storage and admin page
+      SitesurveyFormTest.php      <-- Tests form usage and data storage
+      SitesurveyTestBase.php      <-- Abstract base class for test setup
+
