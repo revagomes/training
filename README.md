@@ -39,4 +39,20 @@ In addition to our root directory, most modules also contain three additional di
 * **tests**
   * For projects using [PHPUnit](http://www.phpunit.de/) for testing. See [this change notice for more information](https://drupal.org/node/2012184). We will explore these files in the _6-phpunit_ branch.
 
-### /lib
+#### /lib
+
+The library directory (/lib) stores most of the code for your project. It used PSR-0 conventions to encourage code re-use. Once you get used to the patterns used in Drupal, you may find it an excellent way to keep code organized.
+
+The library structure also helps enforce separation of concerns in your code. As a general rule when looking at /lib, each file should be a single class. Each class should have a single responsibility.
+
+The base structure of /lib is as follows:
+
+    lib/
+      Drupal/
+        sitesurvey/
+          Controller/
+          Form/
+          Plugin/
+            Block/
+          Tests/
+
